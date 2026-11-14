@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Demo Mini Hackathon DevFest MienTrung 2026</title>
-<meta name="description" content="Xem video demo của 31 đội Mini Hackathon DevFest MienTrung 2026 và bình chọn trực tiếp tại Demo Day 14/11.">
+<meta name="description" content="Xem video demo của các đội Mini Hackathon DevFest MienTrung 2026 và bình chọn trực tiếp tại Demo Day 14/11.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Google+Sans+Code:wght@400;500;600&display=swap">
@@ -78,6 +78,7 @@ h1 .num{color:var(--pink);-webkit-text-stroke:3px var(--ink);paint-order:stroke 
 .player button:hover .play,.player button:focus-visible .play{transform:scale(1.08)}
 .player .play::after{content:"";border-left:22px solid var(--ink);border-top:14px solid transparent;border-bottom:14px solid transparent;margin-left:6px}
 .player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.player a.soon{text-decoration:none;cursor:pointer}
 .player .soon{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:16px;
   background:repeating-linear-gradient(-45deg,var(--sh-t,#e8e8e4) 0 14px,var(--card) 14px 28px);color:var(--ink)}
 .player .soon p{margin:0;font-family:var(--mono);font-weight:600;font-size:15px;background:var(--card);border:3px solid var(--ink);border-radius:20px;padding:6px 14px}
@@ -212,221 +213,197 @@ footer .mono{font-family:var(--mono);font-weight:600}
    Để trống "" thì thẻ hiện "Video đang cập nhật". */
 const TEAMS = [
   {
-   "no": 1,
-   "name": "KAIZEN",
-   "tagline": "Dựng bản sao số dây chuyền sản xuất, tìm điểm nghẽn và dùng AI đề xuất cách tối ưu cho doanh nghiệp vừa và nhỏ.",
-   "topic": "Tiện ích doanh nghiệp",
-   "video": ""
-  },
-  {
    "no": 2,
    "name": "DryRoute",
    "tagline": "Bản đồ dẫn đường né điểm ngập: AI đọc ảnh camera giao thông, đánh dấu mức ngập và tự tính lại lộ trình an toàn.",
    "topic": "Tiện ích doanh nghiệp",
-   "video": ""
+   "video": "https://www.youtube.com/watch?v=bxTE_Aob1Ho"
   },
   {
    "no": 3,
    "name": "VietPhish Lens",
    "tagline": "Kiểm tra một trang web, đường link hay tin nhắn có phải lừa đảo không và giải thích lý do bằng tiếng Việt dễ hiểu.",
    "topic": "An ninh mạng",
-   "video": ""
+   "video": "https://youtu.be/aXKdLYUUt3U"
   },
   {
    "no": 4,
    "name": "MindClock",
    "tagline": "Trợ lý báo thức giúp học sinh dậy đúng giờ và ôn bài mỗi sáng, kèm đấu trường học tập kiểu RPG.",
    "topic": "Giáo dục",
-   "video": ""
+   "video": "https://youtu.be/tUe-yg4chZo"
   },
   {
    "no": 5,
    "name": "Hồn Làng",
    "tagline": "Bản đồ văn hoá sống của Việt Nam: khám phá làng nghề, ẩm thực, di tích và để AI gợi ý lịch trình phù hợp.",
    "topic": "Du lịch – Văn hoá",
-   "video": ""
+   "video": "https://www.youtube.com/watch?v=mSADVLTILtw"
   },
   {
    "no": 6,
    "name": "EasySTEM",
    "tagline": "Bộ mạch module gắn không cần hàn cùng nền tảng lập trình kéo thả, giúp học sinh tiểu học và THCS học STEM dễ hơn.",
    "topic": "Giáo dục",
-   "video": ""
+   "video": "https://www.youtube.com/watch?v=cO6ihieHiJQ"
   },
   {
    "no": 7,
    "name": "MeetMateAI",
    "tagline": "Trợ lý AI trong cuộc họp: kiểm chứng số liệu, tra cứu tài liệu ngay lúc thảo luận và soạn báo cáo sau họp.",
    "topic": "Tiện ích doanh nghiệp",
-   "video": ""
+   "video": "https://youtu.be/tmnpi3GAZPs"
   },
   {
    "no": 8,
    "name": "BrainTot",
    "tagline": "Biến nội dung bạn lướt mạng xã hội mỗi ngày thành flashcard và bài ôn tập ngoại ngữ, kiến thức cá nhân hoá.",
    "topic": "Giáo dục",
-   "video": ""
-  },
-  {
-   "no": 9,
-   "name": "OMNILAB OVERLAY",
-   "tagline": "Biến tài liệu Toán, Lý tĩnh thành phòng thí nghiệm tương tác, mô phỏng hiện tượng ngay trên trang đang học.",
-   "topic": "Giáo dục",
-   "video": ""
+   "video": "https://youtube.com/shorts/8xKhUL5DpPQ"
   },
   {
    "no": 10,
    "name": "Argus AI",
    "tagline": "Nền tảng thi trực tuyến cho giáo viên, dùng camera AI phát hiện gian lận và hỗ trợ chấm bài tự luận.",
    "topic": "Giáo dục",
-   "video": ""
+   "video": "https://youtu.be/iJYTcQYdgZM"
   },
   {
    "no": 11,
    "name": "Posta",
    "tagline": "Hướng camera vào di tích hay bưu thiếp để AI nhận diện, thuyết minh bằng giọng nói và tái hiện di sản thời xưa.",
    "topic": "Du lịch – Văn hoá",
-   "video": ""
+   "video": "https://youtu.be/nSpPx5LTNoA"
   },
   {
    "no": 12,
    "name": "DANANGACY",
    "tagline": "Ứng dụng du lịch Đà Nẵng tự đổi lịch trình khi trời mưa, có mini-game lịch sử tại điểm đến và voucher địa phương.",
    "topic": "Du lịch – Văn hoá",
-   "video": ""
+   "video": "",
+   "link": "https://danagacy1-1052325656486.asia-southeast1.run.app",
+   "linkLabel": "Xem demo sản phẩm"
   },
   {
    "no": 13,
    "name": "MathCos",
    "tagline": "Học toán tương tác cùng AI: hình học, đồ thị 2D/3D và lời giải từng bước trong cùng một không gian.",
    "topic": "Giáo dục",
-   "video": ""
+   "video": "https://youtu.be/IP-G34hIGI8"
   },
   {
    "no": 14,
    "name": "ClassOps",
    "tagline": "AI Agent đọc bài làm viết tay của học sinh để chỉ ra lỗ hổng kiến thức, giúp giáo viên biết cần giảng lại gì.",
    "topic": "Giáo dục",
-   "video": ""
+   "video": "https://www.youtube.com/watch?v=F8-SJABduzk"
   },
   {
    "no": 15,
    "name": "CLAIMPILOT",
    "tagline": "AI đọc email khiếu nại, tra đơn hàng, đối chiếu chính sách đổi trả và soạn sẵn phản hồi cho nhân viên.",
    "topic": "Tiện ích doanh nghiệp",
-   "video": ""
-  },
-  {
-   "no": 16,
-   "name": "AgentGuard",
-   "tagline": "Phát hiện hành vi vượt quyền qua chuỗi thao tác của AI Agent, bảo vệ dữ liệu khi doanh nghiệp dùng trợ lý AI.",
-   "topic": "An ninh mạng",
-   "video": ""
+   "video": "",
+   "link": "https://drive.google.com/drive/folders/1thO4W8vss8V2mfOZ59z-v_MjvYMe5uEW?usp=drive_link",
+   "linkLabel": "Xem video trên Google Drive"
   },
   {
    "no": 17,
    "name": "CyberQuest",
    "tagline": "Nền tảng học và thực hành An ninh mạng với lab mô phỏng Phishing, SQL Injection, XSS và trợ lý AI tiếng Việt.",
-   "topic": "Giáo dục",
-   "video": ""
-  },
-  {
-   "no": 18,
-   "name": "VietHeritage AI",
-   "tagline": "Hướng dẫn viên AI cho di sản miền Trung, giúp du khách hiểu câu đối, hoành phi và câu chuyện phía sau mỗi di tích.",
-   "topic": "Du lịch – Văn hoá",
-   "video": ""
+   "topic": "An ninh mạng",
+   "video": "https://www.youtube.com/watch?v=kHQH2gNtvg4"
   },
   {
    "no": 19,
    "name": "LuminaLearn",
    "tagline": "AI Agent tự động tạo video bài giảng có hoạt ảnh, mô phỏng trực quan cho các môn Toán, Lý, Hoá, Sinh.",
    "topic": "Giáo dục",
-   "video": ""
+   "video": "https://youtu.be/cnFN1-kKltM"
   },
   {
    "no": 20,
    "name": "EasyFnB",
    "tagline": "Biến camera an ninh có sẵn của quán thành “quản lý ca” AI, theo dõi bàn, khách và nhân viên suốt ca.",
    "topic": "Tiện ích doanh nghiệp",
-   "video": ""
+   "video": "https://www.youtube.com/watch?v=lXC5tdaOVXU"
   },
   {
    "no": 21,
    "name": "AntiScam",
    "tagline": "AI Agent bảo vệ mọi người khỏi lừa đảo trực tuyến.",
    "topic": "An ninh mạng",
-   "video": ""
+   "video": "https://www.youtube.com/watch?v=VsV_q0LcPnA"
   },
   {
    "no": 22,
    "name": "Da Nang Odyssey",
    "tagline": "Website du lịch giải đố kiểu Escape Room gắn với di sản Đà Nẵng, mở khoá manh mối tại từng điểm đến.",
    "topic": "Du lịch – Văn hoá",
-   "video": ""
+   "video": "https://youtu.be/kWMgn9mBEn4"
   },
   {
    "no": 23,
    "name": "AI White-Box Pentest Pipeline",
    "tagline": "Tự động kiểm thử xâm nhập web: AI đọc source code, khoanh vùng lỗ hổng như SQL Injection, IDOR.",
    "topic": "An ninh mạng",
-   "video": ""
+   "video": "https://youtu.be/FcpAnDt2As0"
   },
   {
    "no": 24,
    "name": "ZeroLeak",
    "tagline": "Tường lửa trên trình duyệt chặn rò rỉ dữ liệu nhạy cảm khi dán vào công cụ AI, đồng thời cảnh báo lừa đảo và deepfake.",
    "topic": "An ninh mạng",
-   "video": ""
+   "video": "https://www.youtube.com/watch?v=vmeW8fqcRTA"
   },
   {
    "no": 25,
    "name": "PhishGuard",
    "tagline": "Tiện ích Chrome, Edge giúp phát hiện website giả mạo, tên miền nhái ký tự và tab quảng cáo không mong muốn.",
    "topic": "An ninh mạng",
-   "video": ""
+   "video": "https://youtu.be/WlVAUJKlX6U"
   },
   {
    "no": 26,
    "name": "Tour3D",
    "tagline": "Tham quan Ngọ Môn – Đại Nội Huế bằng 3D ngay trên trình duyệt, có hướng dẫn viên AI trò chuyện bằng giọng nói.",
-   "topic": "Giáo dục",
-   "video": ""
+   "topic": "Du lịch – Văn hoá",
+   "video": "https://youtu.be/26qwBDh9gTw"
   },
   {
    "no": 27,
    "name": "Lumora",
    "tagline": "Gia sư AI ôn thi tốt nghiệp THPT môn Toán theo đề mới, chỉ ra sai ở bước nào, kèm hình học không gian 3D.",
    "topic": "Giáo dục",
-   "video": ""
+   "video": "https://youtu.be/DJkkRo3G0w8"
   },
   {
    "no": 28,
    "name": "Plan2Walk",
    "tagline": "Biến bản vẽ mặt bằng 2D thành không gian 3D để đi lại và xem bố cục ngay trên trình duyệt.",
    "topic": "Tiện ích doanh nghiệp",
-   "video": ""
+   "video": "https://youtu.be/65UkHuQ_Dd0"
   },
   {
    "no": 29,
    "name": "Keiki",
    "tagline": "Trợ lý AI kế toán cho hộ kinh doanh: ghi sổ chỉ bằng chụp hoá đơn, ảnh chuyển khoản hoặc nói một câu.",
    "topic": "Tiện ích doanh nghiệp",
-   "video": ""
+   "video": "https://www.youtube.com/watch?v=KOzcg1zp5zk"
   },
   {
    "no": 30,
    "name": "SyncraMail",
    "tagline": "Tự động xử lý email 24/7: kiểm tra người gửi, lưu và sắp xếp tệp đính kèm, gửi phản hồi theo kịch bản.",
    "topic": "Tiện ích doanh nghiệp",
-   "video": ""
+   "video": "https://www.youtube.com/watch?v=FDgN8cv_s-I"
   },
   {
    "no": 31,
    "name": "Lockulture",
    "tagline": "Chụp ảnh di tích để mở khoá dòng thời gian lịch sử, chia sẻ khoảnh khắc kiểu Locket kết hợp game hoá.",
    "topic": "Du lịch – Văn hoá",
-   "video": ""
+   "video": "https://youtu.be/WAZwZLderCo"
   }
 ];
 
@@ -460,7 +437,7 @@ function card(t){
          <img src="https://i.ytimg.com/vi/${id}/hqdefault.jpg" alt="" loading="lazy">
          <span class="play" aria-hidden="true"></span>
        </button>`
-    : `<div class="soon"><p>Video đang cập nhật</p></div>`;
+    : (t.link ? `<a class="soon" href="${esc(t.link)}" target="_blank" rel="noopener"><p>${esc(t.linkLabel||"Xem video")} ↗</p></a>` : `<div class="soon"><p>Video đang cập nhật</p></div>`);
   const yt = id ? `<a class="yt" href="https://www.youtube.com/watch?v=${id}" target="_blank" rel="noopener">Mở trên YouTube ↗</a>` : "";
   return `<li class="team" style="--sh:${tp.sh};--sh-t:${tp.t}">
     <div class="player">${player}</div>
@@ -496,7 +473,6 @@ function renderChips(){
 chips.addEventListener("click", e => {
   const b = e.target.closest(".chip"); if(!b) return;
   active = b.dataset.topic; renderChips(); render();
-document.getElementById("total").textContent = TEAMS.length;
 });
 q.addEventListener("input", render);
 grid.addEventListener("click", e => {
@@ -510,6 +486,7 @@ grid.addEventListener("click", e => {
 });
 
 renderChips(); render();
+document.getElementById("total").textContent = TEAMS.length;
 const fbar=document.getElementById("fbar"), totop=document.getElementById("totop");
 function onScroll(){
   const y=window.scrollY;
